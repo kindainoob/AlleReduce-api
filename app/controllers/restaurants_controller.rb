@@ -6,7 +6,9 @@ class RestaurantsController < ApplicationController
   end
 
   def show
-    @restaurant = Restaurant.find(params[:id])
-    render json: @restaurant
+    @menus = Menu.where(restaurant_id: params[:id])
+    render json: @menus
   end
 end
+
+# @restaurant = Restaurant.find(params[:id])
