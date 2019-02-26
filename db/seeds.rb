@@ -6,9 +6,12 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Restaurant.create(r_name:"鶴亀製麺", address:"大阪府南河内郡河南町持尾386-10", genre:"うどん")
-Restaurant.create(r_name:"ハッピーバーガー", address:"大阪府高槻市明野町703-19", genre:"ハンバーガー")
-Restaurant.create(r_name:"僕らのピラメキ", address:"大阪府大阪市城東区諏訪2-256-13", genre:"ラーメン")
+Restaurant.create(r_name:"鶴亀製麺", address:"大阪府東大阪市小若江３丁目４−１
+", genre:"うどん")
+Restaurant.create(r_name:"ハッピーバーガー", address:"大阪府東大阪市小若江３丁目４−１
+", genre:"ハンバーガー")
+Restaurant.create(r_name:"僕らのピラメキ", address:"大阪府東大阪市小若江３丁目４−１
+", genre:"ラーメン")
 Restaurant.create(r_name:"甘味本舗", address:"大阪府高槻市城内町773-6", genre:"スイーツ")
 Restaurant.create(r_name:"餃子の桂馬", address:"大阪府大阪市東淀川区瑞光2-397-14", genre:"中華料理")
 Restaurant.create(r_name:"なや寿司", address:"大阪府八尾市沼1-361-15", genre:"寿司")
@@ -54,9 +57,4 @@ Menu.create(m_name:"カレーライス", price:450, allergy:"小麦", restaurant
 Menu.create(m_name:"マンゴーラッシー", price:250, allergy:"乳", restaurant_id:10)
 Menu.create(m_name:"ナン", price:500, allergy:"小麦", restaurant_id:10 )
 
-User.create(u_name:"test1", password_digest:"test1", sex:"男性", age:"20代", allergy:"小麦,乳,かに")
-User.create(u_name:"test2", password_digest:"test2", sex:"男性", age:"10代", allergy:"卵")
-User.create(u_name:"test3", password_digest:"test3", sex:"女性", age:"40代", allergy:"えび、落花生")
-User.create(u_name:"test4", password_digest:"test4", sex:"男性", age:"60代", allergy:"小麦")
-User.create(u_name:"test5", password_digest:"test5", sex:"女性", age:"20代", allergy:"小麦,卵")
-User.create(u_name:"test6", password_digest:"test6", sex:"男性", age:"30代", allergy:"")
+User.create(u_name:"test", password_digest:"test", sex:"男性", age:"30代", allergy:"egg,milk,flour,crab,shrimp,soba,peanuts")

@@ -5,8 +5,7 @@ class RegistrationController < ApplicationController
     @age = params['age']
     @sex = params['sex']
     @allergy = params['allergys']
-    
     User.create(u_name: @name,password_digest: @password,sex: @sex, age: @age, allergy: @allergy.join(','))
-
+    redirect_to 'https://www.youtube.com/'
   end
 end
