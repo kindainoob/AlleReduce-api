@@ -1,9 +1,9 @@
 class RestaurantsController < ApplicationController
 
   def index
-    if session[:user] == nil
-      redirect_to 'http://www.inatatsu.com/AlleReduce/login.html'
-    end
+    # if session[:user] == nil
+    #   redirect_to 'http://www.inatatsu.com/AlleReduce/login.html'
+    # end
     @restaurants = Restaurant.all
     render json: @restaurants
   end
@@ -20,5 +20,3 @@ class RestaurantsController < ApplicationController
     render json: res
   end
 end
-
-# @restaurant = Restaurant.find(params[:id])
