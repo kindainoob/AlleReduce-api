@@ -8,7 +8,7 @@ class LoginController < ApplicationController
 
     if !(@serch.nil?)
       session[:name] = @name
-      redirect_to 'Users/tatsuhiro/Documents/02-App/AlleReduce-frontend/View/user.html'
+      redirect_to 'https://www.youtube.com/'
       # ログイン成功でリダイレクト
     else
 

@@ -8,7 +8,9 @@ class RestaurantsController < ApplicationController
   def show
     @restaurant = Restaurant.find(params[:id])
     @menus = Menu.where(restaurant_id: params[:id])
-    res = [@restaurant,@menus]
+    session[:user] = "test4"
+    @user = User.find_by(u_name: session[:user])
+    res = [@restaurant,@menus,@user]
     render json: res
   end
 end
