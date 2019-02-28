@@ -7,7 +7,8 @@ class LoginController < ApplicationController
     @serch = User.find_by(u_name: @name) && User.find_by(password_digest: @password) && @name != "" && @password != ""
 
     if !(@serch.nil?)
-      session[:name] = @name
+      session[:user] = @name
+      puts session[:name]
       redirect_to 'http://www.inatatsu.com/AlleReduce/home.html'
       # ログイン成功でリダイレクト
     else

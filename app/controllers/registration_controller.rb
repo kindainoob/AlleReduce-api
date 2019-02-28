@@ -1,6 +1,6 @@
 class RegistrationController < ApplicationController
   def index
-    @name = params['name']
+    @name = "beaf"#params['name']
     @password = params['password']
     @age = params['age']
     @sex = params['sex']

@@ -2,11 +2,9 @@ class UsersController < ApplicationController
 
   def index
     if session[:user] == nil
-      redirect_to 'http://www.inatatsu.com/AlleReduce/login.html'
+      redirect_to 'http://www.inatatsu.com/AlleReduce/login.html' and return
     end
-    # session[:user] = "test4"
-    @user = User.find_by(u_name:session[:user])
-    puts @user.u_name
+    @user = User.find_by(u_name:session[:name])
     render json:@user
   end
 end
