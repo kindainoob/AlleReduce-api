@@ -1,24 +1,5 @@
-# README
+# AlleReduce
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+HackU近大で制作した食物アレルギーを会費して飯を食らうためのアプリ
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Ruby on Rails を使用している
